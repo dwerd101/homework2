@@ -13,9 +13,11 @@ package com.lesson.l3.easy;
     Метод getLetterPosition должен вызвать метод ordinal
  */
 
+    //Решено
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Alphabet.G.getLetterPosition());
+
+        System.out.println(Alphabet.A.getLetterPosition());
     }
 
     public enum Alphabet {
@@ -26,7 +28,7 @@ public class Main {
         U, V, W, X, Y, Z;
 
         int getLetterPosition() {
-            return -1;
+            return Alphabet.A.ordinal()+1;
         }
     }
 }
