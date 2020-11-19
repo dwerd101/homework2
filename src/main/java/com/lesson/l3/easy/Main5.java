@@ -21,7 +21,8 @@ public class Main5 {
         private String name = "безымянный кот";
 
         public void setName(String name) {
-          //Напиши здесь код
+            this.name = name;
+        
         }
 
         public static void main(String[] args) {
