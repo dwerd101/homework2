@@ -17,11 +17,13 @@ public class Main6 {
         private static int catsCount = 0;
 
         public static void setCatsCount(int catsCount) {
+           Cat.catsCount = catsCount;
+
             //Напиши здесь код
         }
 
         public static void main(String[] args) {
-
+            Cat.setCatsCount(5);
             System.out.println(catsCount);
         }
     }
