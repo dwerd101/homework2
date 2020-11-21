@@ -104,6 +104,10 @@ target/generated-test-sources/
 
 out/artifacts/stock_inventory_war_exploded/META-INF/MANIFEST.MF
 
+.idea
+*.iws
+*.iml
+*.ipr
 
 target/
 .iml
