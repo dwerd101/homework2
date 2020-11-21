@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
-Ввести с клавиатуры два целых числа, и вывести на экран минимальное из них.
-Если два числа равны между собой, необходимо вывести любое.
+ * Ввести с клавиатуры два целых числа, и вывести на экран минимальное из них.
+ * Если два числа равны между собой, необходимо вывести любое.
  */
 
 /*Требования:
@@ -22,7 +22,15 @@ public class Main {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         Integer number1 = Integer.parseInt(bufferedReader.readLine());
+        Integer number2 = Integer.parseInt(bufferedReader.readLine());
 
-        //Написать здесь код
+        if (number1 > number2 || number1 == number2) {
+            System.out.println(number1);
+        } else {
+            System.out.println(number2);
+        }
     }
+
+    //Написать здесь код
 }
+
