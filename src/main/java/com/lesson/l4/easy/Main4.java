@@ -26,6 +26,11 @@ public class Main4 {
 
         String name1 = bufferedReader.readLine();
         String name2 = bufferedReader.readLine();
+
+        if (name1.equals(name2)) {
+            System.out.println("имена идентичны");
+        }
+
         //Написать здесь код
     }
 }
