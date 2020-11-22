@@ -24,7 +24,7 @@ public class Main {
         Integer number1 = Integer.parseInt(bufferedReader.readLine());
         Integer number2 = Integer.parseInt(bufferedReader.readLine());
 
-        if (number1 > number2 || number1 == number2) {
+        if (number1 > number2 || number1.equals(number2)) {
             System.out.println(number1);
         } else {
             System.out.println(number2);
