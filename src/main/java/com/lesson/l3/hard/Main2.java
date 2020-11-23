@@ -1,6 +1,7 @@
 package com.lesson.l3.hard;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,7 +21,7 @@ import java.util.List;
 */
 public class Main2 {
 
-    public static enum Wheel {
+    public enum Wheel {
         FRONT_LEFT,
         FRONT_RIGHT,
         BACK_LEFT,
