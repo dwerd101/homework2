@@ -25,7 +25,7 @@ public class Cat {
 
     public void initialize(String name, int weight, int age) {
         this.name = name;
-        this.weight = 3;
+        this.weight = weight;
         this.age = age;
 
     }
