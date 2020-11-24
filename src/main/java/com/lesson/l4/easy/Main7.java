@@ -16,7 +16,7 @@ package com.lesson.l4.easy;
  * Если некий кот1 выигрывает у кота кот2, то кот2 должен проигрывать коту кот1.
  */
 public class Main7 {
-
+// дубль два
     public static class Cat {
         public int age;
         public int weight;
