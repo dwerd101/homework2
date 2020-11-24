@@ -17,7 +17,7 @@ package com.lesson.l4.easy;
  */
 public class Main7 {
 
-    public static class Cat{
+    public static class Cat {
         public int age;
         public int weight;
         public int strength;
@@ -26,13 +26,44 @@ public class Main7 {
         }
 
         public boolean fight(Cat anotherCat) {
-            //напиши тут код
+            int win = 0;
+
+            if (this.age > anotherCat.age) {
+                win++;
+            }
+
+            if (this.weight > anotherCat.weight) {
+                win++;
+            }
+
+            if (this.strength > anotherCat.strength) {
+                win++;
+            }
+            if (win >= 2) {
+                return true;
+            }
             return false;
         }
-
+        //напиши тут код
     }
 
     public static void main(String[] args) {
+        Cat vaska = new Cat();
+        Cat petro = new Cat();
+
+        vaska.age = 3;
+        vaska.strength = 6;
+        vaska.weight = 5;
+
+        petro.age = 7;
+        petro.strength = 5;
+        petro.weight = 7;
+
+        boolean result1 = vaska.fight(petro);
+        boolean result2 = petro.fight(vaska);
+
+        System.out.println(result1);
+        System.out.println(result2);
 
     }
 }

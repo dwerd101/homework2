@@ -23,7 +23,6 @@ public class Main3 {
         int number2 = Integer.parseInt(bufferedReader.readLine());
         int number3 = Integer.parseInt(bufferedReader.readLine());
 
-        // не могу понять почему внутренний if всегда false?
 
         if (number1 < number2 && number1 < number3 && number2 < number3) {
             System.out.print(number3 + " " + number2 + " " + number1);
@@ -41,8 +40,6 @@ public class Main3 {
             System.out.print(number2 + " " + number1 + " " + number3);
         }
         if (number3 < number2 && number2 < number1) {
-            System.out.print(number1 + " " + number2 + " " + number3);
-
+            System.out.print(number1 + " " + number2 + " " + number3);}
         }
     }
-}
