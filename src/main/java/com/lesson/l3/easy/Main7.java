@@ -12,17 +12,20 @@ package com.lesson.l3.easy;
  * В методе main должно быть только две проинициализированные переменные типа Cat.
  * Переменная count должна содержать актуальное количество созданных объектов-котов.
  */
-public class Main7 {
-    public static void main(String[] args) {
-        Cat cat1 = new Cat();
-        Cat.count++;
-        Cat cat2 = new Cat();
-        Cat.count++;
-        System.out.println("Cats count is " + Cat.count);
-    }
+//public class Main7 extends Main8 {
+//    public static void main(String[] args) {
+//        Cat cat1 = new Cat();
+//        Cat.count++;
+//        Cat cat2 = new Cat();
+//        Cat.count++;
+//        System.out.println("Cats count is " + Cat.count);
+//        Main7 m = new Main7();
+//        m.test();
+//        Object
+//    }
 
-    public static class Cat {
-        public static int count = 0;
-
-    }
-}
+//    public static class Cat {
+//        public static int count = 0;
+//
+//    }
+//}

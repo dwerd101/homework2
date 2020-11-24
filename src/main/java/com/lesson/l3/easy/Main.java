@@ -31,5 +31,10 @@ public class Main {
         int getLetterPosition() {
             return Alphabet.A.ordinal()+1;
         }
+
+        public static void main(String[] args) {
+            Integer a = new Integer(2);
+            int i = a.intValue();
+        }
     }
 }

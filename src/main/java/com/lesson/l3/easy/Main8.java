@@ -1,7 +1,6 @@
 package com.lesson.l3.easy;
 
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -21,30 +20,13 @@ import java.util.Set;
  */
 public class Main8 {
     private final String first, last;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Main8 main8 = (Main8) o;
-        return Objects.equals(first, main8.first) &&
-                Objects.equals(last, main8.last);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(first, last);
-    }
-
     public Main8(String first, String last) {
         this.first = first;
         this.last = last;
-
     }
     public static void main(String[] args) {
         Set<Main8> s = new HashSet<>();
         s.add(new Main8("Mickey", "Mouse"));
         System.out.println(s.contains(new Main8("Mickey", "Mouse")));
-
     }
 }
