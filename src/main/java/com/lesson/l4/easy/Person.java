@@ -17,9 +17,9 @@ package com.lesson.l4.easy;
 //        У класса Person должен быть сеттер для переменной sex.
 //        У класса Person должен быть геттер для переменной sex.`
 public class Person {
-    String name;
-    int age;
-    char sex;
+    private String name;
+    private int age;
+    private char sex;
 
     public String getName() {
         return name;

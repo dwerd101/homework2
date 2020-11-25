@@ -23,9 +23,9 @@ package com.lesson.l4.easy;
  *  инициализирующий соответствующие переменные класса.
  */
 public class Friend {
-    String name;
-    int age;
-    char sex;
+    private String name;
+    private int age;
+    private char sex;
 
     public void initialize(String name) {
 

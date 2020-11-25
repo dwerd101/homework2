@@ -13,11 +13,11 @@ package com.lesson.l4.easy;
 Тот параметр который не передан в аргументах нужно определить в методе.
 */
 public class Cat {
-    String name;
-    int age;
-    int weight;
-    String color;
-    String address;
+    private String name;
+    private int age;
+    private int weight;
+    private String color;
+    private String address;
 
     public void initialize(String name) {
         this.name = name;

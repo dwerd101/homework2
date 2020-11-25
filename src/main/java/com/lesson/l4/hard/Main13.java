@@ -15,9 +15,9 @@ public class Main13 {
     }
 
     public static class Cat {
-        String name;
-        int age;
-        int tailLength;
+        private String name;
+        private int age;
+        private int tailLength;
 
         public Cat(String name, int age, int tailLength) {
             this.name = name;
@@ -27,9 +27,9 @@ public class Main13 {
     }
 
     public static class Dog {
-        String name;
-        int age;
-        int tailLength;
+        private String name;
+        private int age;
+        private int tailLength;
 
         public Dog(String name, int age, int tailLength) {
             this.name = name;
@@ -39,9 +39,9 @@ public class Main13 {
     }
 
     public static class Mouse {
-        String name;
-        int age;
-        int tailLength;
+        private String name;
+        private int age;
+        private int tailLength;
 
         public Mouse(String name, int age, int tailLength) {
             this.name = name;
