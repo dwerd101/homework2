@@ -26,11 +26,15 @@ public class Main4 {
 
         String name1 = bufferedReader.readLine();
         String name2 = bufferedReader.readLine();
+        int lettersAmount1 = name1.length();
+        int lettersAmount2 = name2.length();
 
         if (name1.equals(name2)) {
             System.out.println("имена идентичны");
-        }
+        } else if (lettersAmount1 == lettersAmount2) {
+            System.out.println("Длины имен равны");
 
-        //Написать здесь код
+            //Написать здесь код
+        }
     }
 }
