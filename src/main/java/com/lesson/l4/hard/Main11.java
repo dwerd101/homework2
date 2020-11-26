@@ -14,13 +14,16 @@ public class Main11 {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        int number = Integer.parseInt(bufferedReader.readLine());
-
-        if (number>0) {
-
+        int N = Integer.parseInt(bufferedReader.readLine());
+        if (N<=0) return;
+        int maximum = Integer.parseInt(bufferedReader.readLine());
+        for (int i=0; i<N-1;i++) {
+            int number = Integer.parseInt(bufferedReader.readLine());
+            if (number>maximum) {
+                maximum = number;
+            }
         }
-
-
+        System.out.println(maximum);
         //Написать здесь код
     }
 }
