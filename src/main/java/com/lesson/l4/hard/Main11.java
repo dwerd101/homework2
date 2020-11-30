@@ -3,6 +3,8 @@ package com.lesson.l4.hard;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Написать программу, которая:
@@ -12,18 +14,37 @@ import java.io.InputStreamReader;
  */
 public class Main11 {
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int N = Integer.parseInt(bufferedReader.readLine());
 
-        int N = Integer.parseInt(bufferedReader.readLine());
-        if (N<=0) return;
-        int maximum = Integer.parseInt(bufferedReader.readLine());
-        for (int i=0; i<N-1;i++) {
-            int number = Integer.parseInt(bufferedReader.readLine());
-            if (number>maximum) {
-                maximum = number;
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        if(a<=0) return;
+        int temp = Integer.MIN_VALUE;
+        for(int i=0; i<a; i++) {
+            int b = scanner.nextInt();
+            if(b>temp) {
+                temp = b;
+
             }
+
         }
-        System.out.println(maximum);
-        //Написать здесь код
+
+//        int amountNumbers [] = new int[N];
+//        int maxNum = Math.max(amountNumbers, N);
+//        System.out.println();
+
+
+//        if (N<=0) return;
+//        int maximum = Integer.parseInt(bufferedReader.readLine());
+//        for (int i=1; i<N;i++) {
+//            int number = Integer.parseInt(bufferedReader.readLine());
+//            if (number>maximum) {
+//                maximum = number;
+//            }
+//        }
+//        System.out.println(maximum);
+//        //Написать здесь код
     }
 }
