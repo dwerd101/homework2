@@ -11,31 +11,33 @@ double percent(int a, int b) – возвращает процент b из чи
 */
 public class Calculator {
     public static int plus(int a, int b) {
-        //напишите тут ваш код
-        return 0;
+        int sum = a + b;
+        return sum;
     }
 
     public static int minus(int a, int b) {
-        //напишите тут ваш код
-        return 0;
+        int min = a - b;
+        return min;
     }
 
     public static int multiply(int a, int b) {
-        //напишите тут ваш код
-        return 0;
+        int mult = a * b;
+        return mult;
     }
 
     public static double division(int a, int b) {
-        //напишите тут ваш код
-        return 0;
+        int div = a / b;
+        return div;
     }
 
     public static double percent(int a, int b) {
-        //напишите тут ваш код
-        return 0;
+       int per = a * b / 100;
+        return per;
     }
 
     public static void main(String[] args) {
+
+        System.out.println(Calculator.percent(1000,10));
 
     }
 }

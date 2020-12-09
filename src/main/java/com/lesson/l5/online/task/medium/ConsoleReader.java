@@ -1,5 +1,9 @@
 package com.lesson.l5.online.task.medium;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /** Класс ConsoleReader
 Сделать класс ConsoleReader, у которого будут 4 статических метода:
 String readString() – читает с клавиатуры строку
@@ -17,23 +21,27 @@ boolean readBoolean() – читает с клавиатуры строку "tru
  */
 public class ConsoleReader {
 
-    public static String readString() {
-        //напишите тут ваш код
-      return null;
+    public static String readString() throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        String string = bufferedReader.readLine();
+      return string;
     }
 
-    public static int readInt() {
-        //напишите тут ваш код
-      return 0;
+    public static int readInt() throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        int number = Integer.parseInt(bufferedReader.readLine());
+      return number;
     }
 
-    public static double readDouble() {
-        //напишите тут ваш код
-       return 0;
+    public static double readDouble() throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        double number2 = Double.parseDouble(bufferedReader.readLine());
+       return number2;
     }
 
-    public static boolean readBoolean() {
-        //напишите тут ваш код
-        return false;
+    public static boolean readBoolean() throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        boolean log = Boolean.parseBoolean(bufferedReader.readLine());
+        return log;
     }
 }
