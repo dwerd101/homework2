@@ -32,8 +32,7 @@ public class Main3 {
         for (int i = 0; i < 5; i++) {
             list.add(bufferedReader.readLine());
         }
-        // этот вариант,конечно, взяла из интернета, но почему оно не работает нормально непонятно
-        String min = Collections.min(list, Comparator.comparing(String::length));
-        System.out.println(min);
+        list.sort(Comparator.comparing(String::length));
+        System.out.println(list);
     }
 }

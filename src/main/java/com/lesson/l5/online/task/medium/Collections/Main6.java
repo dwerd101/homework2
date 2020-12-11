@@ -1,5 +1,11 @@
 package com.lesson.l5.online.task.medium.Collections;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 1. Создай список строк.
  * 2. Добавь в него 10 строчек с клавиатуры.
@@ -16,5 +22,14 @@ package com.lesson.l5.online.task.medium.Collections;
 Должна быть выведена только одна строка.
  */
 public class Main6 {
+    public static void main(String[] args) throws IOException {
+    List<String> list = new ArrayList<>();
 
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        for (int i = 0; i < 10; i++) {
+            list.add(bufferedReader.readLine());
+        }
+
+    }
 }

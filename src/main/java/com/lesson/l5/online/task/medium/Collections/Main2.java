@@ -32,49 +32,26 @@ public class Main2 {
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-        List<String> strings = new ArrayList<>();
+        List<String> list = new ArrayList<>();
 
         for (int i = 0; i < 5; i++) {
-            strings.add(bufferedReader.readLine());
+            list.add(bufferedReader.readLine());
         }
-//        String max = Collections.max(strings, Comparator.comparing(s -> s.length()));
+//        String max = Collections.max(list, Comparator.comparing(String::length));
 //        System.out.println(max);
-
-        int max = strings.get(0).length();
-        for (String string : strings) {
-            if (string.length() > max) {
-                max = string.length();
-            }            else if (string.length() == max) { //тут доделаю
-
+        int max2 = 0;
+        for (String s : list) {
+            if (s.length() > max2) {
+                max2 = s.length();
             }
         }
-        System.out.println(max); // что нужно написать, чтобы печаталась строка? Я уже не могууу
+        for (String s : list) {
+            if (s.length() == max2) {
+                System.out.println(s);
+            }
+        }
     }
-
 }
-
-
-
-
-//        for (int i = 0; i < strings.size(); i++) {
-//            String s = strings.get(i);
-//            if (i == 0) {
-//                max = s.length();
-//            } else if (max < s.length()) {
-//                max = s.length();
-//            }
-//            System.out.println(s);
-
-
-//        if (strings.get(i).length()>max) {
-//            max=strings.get(i).length();
-//        }
-//    }
-//for (int i = 0; i < strings.size(); i++) {
-//        if (max==strings.get(i).length()) {
-//            System.out.println(strings.get(i));
-
-
 
 
 

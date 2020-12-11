@@ -28,7 +28,7 @@ public class Main5 {
             list.add(bufferedReader.readLine());
         }
         for (int i = 0; i < 13; i++) {
-            list.add(0, list.remove(list.size() - 1)); //частично из инета, зачем -1?
+            list.add(0, list.remove(list.size() - 1));
         }
         for (int i=0;i<5;i++)
         {

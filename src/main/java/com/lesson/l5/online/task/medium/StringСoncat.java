@@ -20,20 +20,21 @@ public class StringСoncat {
 
     public static String multiply(String s) {
         for (int i = 0; i < 5; i++) {
-            System.out.println(s);
+            System.out.print(s);
     }
         return s;
 }
 
     public static String multiply(String s, int count) {
         for (int i = 0; i < count; i++) {
-            System.out.println(s);
+            System.out.print(s);
         }
         return s;
     }
 
     public static void main(String[] args) {
        StringСoncat.multiply("hi");
+       StringСoncat.multiply("hello",2);
 
     }
 }

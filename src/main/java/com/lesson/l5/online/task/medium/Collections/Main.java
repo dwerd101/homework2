@@ -18,14 +18,14 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> arrayList = new ArrayList<>();
-        arrayList.add("cat");
-        arrayList.add("dog");
-        arrayList.add("bat");
-        arrayList.add("owl");
-        arrayList.add("rat");
-        System.out.println(arrayList.size());
-        for (String s : arrayList) {
+        List<String> list = new ArrayList<>();
+        list.add("cat");
+        list.add("dog");
+        list.add("bat");
+        list.add("owl");
+        list.add("rat");
+        System.out.println(list.size());
+        for (String s : list) {
             System.out.println(s);
 
         }
